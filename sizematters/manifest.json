@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+
+  "name": "Size Matters",
+  "description": "Shows the size of the image beneath the cursor.",
+  "version": "0.2",
+
+  "permissions": [],
+
+  "offline_enabled": true,
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["core.js"],
+      "run_at": "document_end",
+      "all_frames": true
+    }
+  ]
+}
